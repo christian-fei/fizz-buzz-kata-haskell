@@ -9,7 +9,8 @@ main = do runTestTT tests
 tests = TestList [
   printsTheNumberItself,
   printsOne,
-  printsFizzForThree
+  printsFizzForThree,
+  printsFizzForMultiplesOfThree
   ]
 
 printsTheNumberItself =
@@ -20,3 +21,6 @@ printsOne =
 
 printsFizzForThree =
   fizzbuzz 3 ~?= "Fizz"
+
+printsFizzForMultiplesOfThree =
+  fizzbuzz 6 ~?= "Fizz"
