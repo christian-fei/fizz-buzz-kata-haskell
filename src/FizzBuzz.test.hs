@@ -27,8 +27,6 @@ multipleOfThreeIsFizz = [
 multipleOfFiveIsBuzz = [
   calcFizzBuzz 5 ~?= "Buzz",
   calcFizzBuzz 10 ~?= "Buzz",
-  calcFizzBuzz 15 ~?= "Buzz",
   calcFizzBuzz 20 ~?= "Buzz",
-  calcFizzBuzz 25 ~?= "Buzz",
-  calcFizzBuzz 30 ~?= "Buzz"
+  calcFizzBuzz 25 ~?= "Buzz"
   ]
