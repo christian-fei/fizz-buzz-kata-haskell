@@ -6,9 +6,9 @@ import FizzBuzz
 
 main = do runTestTT tests
 
-tests = TestList [
-  calledOnNormalNumberReturnsTheNumber
-  ]
+tests = TestList normalNumbers
 
-calledOnNormalNumberReturnsTheNumber =
+
+normalNumbers = [
   calcFizzBuzz 0 ~?= "0"
+  ]
