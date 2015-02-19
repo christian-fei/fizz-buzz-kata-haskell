@@ -3,4 +3,4 @@ where
 
 
 fizzbuzz :: Int -> String
-fizzbuzz n = show 0
+fizzbuzz n = show n

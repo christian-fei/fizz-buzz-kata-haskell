@@ -7,8 +7,12 @@ import FizzBuzz
 main = do runTestTT tests
 
 tests = TestList [
-  printsTheNumberItself
+  printsTheNumberItself,
+  printsOne
   ]
 
 printsTheNumberItself =
   fizzbuzz 0 ~?= "0"
+
+printsOne =
+  fizzbuzz 1 ~?= "1"
