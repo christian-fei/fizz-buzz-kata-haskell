@@ -13,7 +13,8 @@ tests = TestList [
   printsFizzForSix,
   printsFizzForNine,
   printsBuzzForFive,
-  printsBuzzForTen
+  printsBuzzForTen,
+  printsFizzBuzzForFifteen
   ]
 
 printsTheNumberItself =
@@ -36,3 +37,6 @@ printsBuzzForFive =
 
 printsBuzzForTen =
   fizzbuzz 10 ~?= "Buzz"
+
+printsFizzBuzzForFifteen =
+  fizzbuzz 15 ~?= "FizzBuzz"
