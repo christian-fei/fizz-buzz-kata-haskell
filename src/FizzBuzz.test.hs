@@ -7,14 +7,7 @@ import FizzBuzz
 main = do runTestTT tests
 
 tests = TestList $
-  normalNumbers ++ multipleOfThreeIsFizz ++ multipleOfFiveIsBuzz ++ [
-    calcFizzBuzz 15 ~?= "FizzBuzz",
-    calcFizzBuzz 30 ~?= "FizzBuzz",
-    calcFizzBuzz 45 ~?= "FizzBuzz",
-    calcFizzBuzz 60 ~?= "FizzBuzz",
-    calcFizzBuzz 75 ~?= "FizzBuzz",
-    calcFizzBuzz 90 ~?= "FizzBuzz"
-    ]
+  normalNumbers ++ multipleOfThreeIsFizz ++ multipleOfFiveIsBuzz ++ multipleOfFifteenIsFizzBuzz
 
 
 normalNumbers = [
@@ -36,4 +29,13 @@ multipleOfFiveIsBuzz = [
   calcFizzBuzz 10 ~?= "Buzz",
   calcFizzBuzz 20 ~?= "Buzz",
   calcFizzBuzz 25 ~?= "Buzz"
+  ]
+
+multipleOfFifteenIsFizzBuzz = [
+  calcFizzBuzz 15 ~?= "FizzBuzz",
+  calcFizzBuzz 30 ~?= "FizzBuzz",
+  calcFizzBuzz 45 ~?= "FizzBuzz",
+  calcFizzBuzz 60 ~?= "FizzBuzz",
+  calcFizzBuzz 75 ~?= "FizzBuzz",
+  calcFizzBuzz 90 ~?= "FizzBuzz"
   ]
