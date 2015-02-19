@@ -22,3 +22,10 @@ library
   build-depends:       base >=4.7 && <4.8, HUnit
   hs-source-dirs:      src
   default-language:    Haskell2010
+
+Test-Suite FizzBuzz
+  type:                exitcode-stdio-1.0
+  main-is:             FizzBuzz.test.hs
+  hs-source-dirs:      src
+  build-depends:       base, containers, HUnit
+  default-language:    Haskell2010
