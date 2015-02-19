@@ -2,4 +2,4 @@ module FizzBuzz
 where
 
 calcFizzBuzz :: Int -> String
-calcFizzBuzz n = "0"
+calcFizzBuzz n = show n
