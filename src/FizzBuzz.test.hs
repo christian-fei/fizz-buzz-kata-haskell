@@ -10,5 +10,6 @@ tests = TestList normalNumbers
 
 
 normalNumbers = [
-  calcFizzBuzz 0 ~?= "0"
+  calcFizzBuzz 0 ~?= "0",
+  calcFizzBuzz 1 ~?= "1"
   ]
