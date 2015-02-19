@@ -6,7 +6,10 @@ import FizzBuzz
 
 main = do runTestTT tests
 
-tests = TestList normalNumbers
+tests = TestList $
+  normalNumbers ++ [
+    calcFizzBuzz 3 ~?= "Fizz"
+  ]
 
 
 normalNumbers = [
@@ -17,3 +20,5 @@ normalNumbers = [
   calcFizzBuzz 4 ~?= "4",
   calcFizzBuzz 5 ~?= "5"
   ]
+
+
