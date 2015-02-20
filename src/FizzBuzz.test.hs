@@ -11,8 +11,12 @@ import FizzBuzz
 main = defaultMain tests
 
 tests = hUnitTestToTests $ TestList [
-  returnsZeroForZero
+  returnsZeroForZero,
+  returnsOneForOne
   ]
 
 returnsZeroForZero =
   fizzbuzz 0 ~?= "0"
+
+returnsOneForOne =
+  fizzbuzz 1 ~?= "1"
