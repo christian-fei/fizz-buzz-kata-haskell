@@ -12,7 +12,8 @@ main = defaultMain tests
 
 tests = hUnitTestToTests $ TestList [
   returnsZeroForZero,
-  returnsOneForOne
+  returnsOneForOne,
+  returnsTwoForTwo
   ]
 
 returnsZeroForZero =
@@ -20,3 +21,6 @@ returnsZeroForZero =
 
 returnsOneForOne =
   fizzbuzz 1 ~?= "1"
+
+returnsTwoForTwo =
+  fizzbuzz 2 ~?= "2"
