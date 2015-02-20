@@ -10,16 +10,19 @@ import FizzBuzz
 
 main = defaultMain tests
 
-tests = hUnitTestToTests $ TestList $ simpleNumbers ++ [
-  returnsFizzForThree,
-  returnsFizzForSix
-  ]
+tests = hUnitTestToTests $ TestList $ simpleNumbers ++ multipleOfThreeIsFizz
 
 simpleNumbers = [
   returnsZeroForZero,
   returnsOneForOne,
   returnsTwoForTwo
   ]
+
+multipleOfThreeIsFizz = [
+  returnsFizzForThree,
+  returnsFizzForSix
+  ]
+
 
 returnsZeroForZero =
   fizzbuzz 0 ~?= "0"
