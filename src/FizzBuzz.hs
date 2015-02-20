@@ -5,6 +5,7 @@ module FizzBuzz
 where
 
 fizzbuzz :: Int -> String
-fizzbuzz 6 = "Fizz"
-fizzbuzz 3 = "Fizz"
-fizzbuzz n = show n
+fizzbuzz 0 = "0"
+fizzbuzz n
+  | n `rem` 3 == 0    = "Fizz"
+  | otherwise         = show n
