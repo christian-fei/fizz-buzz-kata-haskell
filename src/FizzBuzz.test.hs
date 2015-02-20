@@ -10,7 +10,9 @@ import FizzBuzz
 
 main = defaultMain tests
 
-tests = hUnitTestToTests $ TestList [
+tests = hUnitTestToTests $ TestList simpleNumbers
+
+simpleNumbers = [
   returnsZeroForZero,
   returnsOneForOne,
   returnsTwoForTwo
