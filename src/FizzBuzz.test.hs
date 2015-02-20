@@ -12,7 +12,8 @@ main = defaultMain tests
 
 tests = hUnitTestToTests $ TestList $
   simpleNumbers ++ multipleOfThreeIsFizz ++ multipleOfFiveIsBuzz ++ [
-    returnsFizzBuzzForFifteen
+    returnsFizzBuzzForFifteen,
+    returnsFizzBuzzForThirty
     ]
 
 simpleNumbers = [
@@ -54,3 +55,6 @@ returnsBuzzForTen =
 
 returnsFizzBuzzForFifteen =
   fizzbuzz 15 ~?= "FizzBuzz"
+
+returnsFizzBuzzForThirty =
+  fizzbuzz 30 ~?= "FizzBuzz"
