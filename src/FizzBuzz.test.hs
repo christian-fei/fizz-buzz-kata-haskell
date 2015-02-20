@@ -11,7 +11,9 @@ import FizzBuzz
 main = defaultMain tests
 
 tests = hUnitTestToTests $ TestList $
-  simpleNumbers ++ multipleOfThreeIsFizz ++ multipleOfFiveIsBuzz
+  simpleNumbers ++ multipleOfThreeIsFizz ++ multipleOfFiveIsBuzz ++ [
+    returnsFizzBuzzForFifteen
+    ]
 
 simpleNumbers = [
   returnsZeroForZero,
@@ -49,3 +51,6 @@ returnsBuzzForFive =
 
 returnsBuzzForTen =
   fizzbuzz 10 ~?= "Buzz"
+
+returnsFizzBuzzForFifteen =
+  fizzbuzz 15 ~?= "FizzBuzz"
